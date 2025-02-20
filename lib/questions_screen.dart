@@ -12,8 +12,7 @@ class QuestionsScreen extends StatefulWidget{
 class _QuestionScreenState extends State<QuestionsScreen>{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Text("Quiz Page");
   }
   
 }

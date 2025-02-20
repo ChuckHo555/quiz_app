@@ -1,18 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/questions_screen.dart';
 import 'package:quiz_app/start_screen.dart';
 
-class Quiz extends StatefulWidget{
+class Quiz extends StatefulWidget {
+  const Quiz({super.key});
   @override
-  State<StatefulWidget> createState(){
+  State<Quiz> createState() {
     return _QuizState();
-
   }
+  //Write other code to change the state
 }
 
-class _QuizState extends State<Quiz>{
+class _QuizState extends State<Quiz> {
+  void switchScreen(){
+    setState((){
+      activeScreen = QuestionsScreen();
+    });
+  }
+
+  Widget activeScreen = StartScreen();
   @override
-  Widget build(BuildContext context){
-      return  MaterialApp(
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
         body: Container(
           decoration: const BoxDecoration(
@@ -21,11 +30,12 @@ class _QuizState extends State<Quiz>{
               end: Alignment.bottomRight,
               colors: [
                 Color.fromARGB(255, 78, 13, 151),
+                Colors.blue,
                 Color.fromARGB(255, 107, 15, 168),
               ],
             ),
           ),
-          child: StartScreen(),
+          child: activeScreen,
         ),
       ),
     );

@@ -1,0 +1,2 @@
+/Users/cheuktungho/Desktop/Projects/Quiz_App/quiz_app/android/app/.cxx/Debug/721j2i66/x86_64/CMakeFiles/edit_cache.dir
+/Users/cheuktungho/Desktop/Projects/Quiz_App/quiz_app/android/app/.cxx/Debug/721j2i66/x86_64/CMakeFiles/rebuild_cache.dir

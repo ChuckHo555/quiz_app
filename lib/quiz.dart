@@ -6,11 +6,11 @@ import 'package:quiz_app/start_screen.dart';
 
 class Quiz extends StatefulWidget {
   const Quiz({super.key});
+
   @override
   State<Quiz> createState() {
     return _QuizState();
   }
-  //Write other code to change the state
 }
 
 class _QuizState extends State<Quiz> {
@@ -20,18 +20,21 @@ class _QuizState extends State<Quiz> {
   void chooseAnswer(String answer) {
     selectedAnswers.add(answer);
     if (selectedAnswers.length == questions.length) {
-      //switch to the results screen instead
+      // Switch to the results screen when quiz is finished,
+      // passing in both the chosen answers and the restart callback.
       setState(() {
-        //selectedAnswers = [];
-        activeScreen = ResultsScreen(chosenAnswers: selectedAnswers,);
+        activeScreen = ResultsScreen(
+          chosenAnswers: selectedAnswers,
+          onRestart: restartQuiz,
+        );
       });
     }
   }
 
   @override
   void initState() {
-    activeScreen = StartScreen(switchScreen);
     super.initState();
+    activeScreen = StartScreen(switchScreen);
   }
 
   void switchScreen() {
@@ -39,6 +42,14 @@ class _QuizState extends State<Quiz> {
       activeScreen = QuestionsScreen(
         onSelectedAnswer: chooseAnswer,
       );
+    });
+  }
+
+  void restartQuiz() {
+    setState(() {
+      // Reset the answers and show the start screen again.
+      selectedAnswers = [];
+      activeScreen = StartScreen(switchScreen);
     });
   }
 

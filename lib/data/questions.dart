@@ -4,46 +4,60 @@ const questions = [
   QuizQuestion(
     "Why did Goku go to the store?", 
     [
-      "Because he needed more Saiyan seasoning",
-      "Because he ran out of Senzu beans",
-      "Because Chi-Chi told him to",
-      "Because he wanted to fight the cashier"
-    ]),
+      "He needed more Saiyan seasoning",
+      "He ran out of Senzu beans",
+      "Chi-Chi told him to",
+      "He wanted to fight the cashier"
+    ],
+  ),
     
-QuizQuestion(
+  QuizQuestion(
     "Why did Luffy bring a ladder to the Grand Line?", 
     [
-      "Because he wanted to reach new heights",
-      "Because he heard the One Piece was on the roof",
-      "Because he needed to climb up to the crow's nest",
-      "Because Zoro kept getting lost below deck"
-    ]),
+      "He wanted to reach new heights",
+      "He heard the One Piece was on the roof",
+      "He needed to climb up to the crow's nest",
+      "Zoro kept getting lost below deck"
+    ],
+  ),
 
-QuizQuestion(
+  QuizQuestion(
     "Why did Sasuke refuse to play hide and seek?", 
     [
-      "Because he never wanted to be found",
-      "Because Itachi was too good at hiding",
-      "Because Naruto always used Shadow Clones",
-      "Because he was too edgy for games"
-    ]),
+      "He never wanted to be found",
+      "Itachi was too good at hiding",
+      "Naruto always used Shadow Clones",
+      "He was too edgy for games"
+    ],
+  ),
 
-QuizQuestion(
+  QuizQuestion(
     "Why did Light Yagami fail art class?", 
     [
-      "Because he couldn't draw the line between good and evil",
-      "Because he only drew names",
-      "Because he kept writing in a notebook instead",
-      "Because Ryuk kept distracting him"
-    ]),
+      "He couldn't draw the line between good and evil",
+      "He only drew names",
+      "He kept writing in a notebook instead",
+      "Ryuk kept distracting him"
+    ],
+  ),
 
-QuizQuestion(
+  QuizQuestion(
     "Why did Zenitsu run away from the battlefield?", 
     [
-      "Because he wanted to practice his breathing… heavily",
-      "Because he thought a demon was actually his grandma",
-      "Because he was saving his energy for a nap",
-      "Because Nezuko wasn't there to impress"
-    ])
+      "He wanted to practice his breathing… heavily",
+      "He thought a demon was actually his grandma",
+      "He was saving his energy for a nap",
+      "Nezuko wasn't there to impress"
+    ],
+  ),
 
+  QuizQuestion(
+    "Why did Saitama sleep in on Mondays?", 
+    [
+      "He spent the weekend punching his alarm clock",
+      "No villain was strong enough to wake him",
+      "He forgot to set his alarm (again!)",
+      "He was busy saving the world in his dreams"
+    ],
+  ),
 ];
